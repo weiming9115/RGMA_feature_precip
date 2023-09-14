@@ -1,0 +1,22 @@
+==================================
+RGMA feature-precipitation product
+==================================
+
+Data under folder named by years
+
+- Masks of 4 features ("AR", "MCS", "LPS", "Front") identified by individual algorithms.
+  6-hourly, 0.25-deg on ERA-5 grids. 
+  These data are derived from origional ouputs archived on NERSC Perlmutter. 
+
+- "MERGE-IR"
+  brightness temperature which is used to differentiate deep convection and congestus from 
+  unexplained precipitating pixels.
+
+- "MERGED-FP"
+  The final products that contain feature masks and GPM precipitation:
+
+  "GPM_feature_merged_xx.nc": regridded GPM precipitation, feature binary masks
+  "FeatureOverlap_indicator_map_xx.nc": PIDs (from 1 to 16), deep convection binary mask, congestus
+                                        binary mask
+
+
